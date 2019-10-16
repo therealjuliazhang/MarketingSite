@@ -62,3 +62,6 @@ p.scroll {
 	overflow: auto;
 }
 
+.parallax-container {
+      height: 700px;
+    }
