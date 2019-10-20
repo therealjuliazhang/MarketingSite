@@ -13,17 +13,17 @@
 		#section1
 		{
 			background-color:#000000;
-			height:105vh;
+			<!--height:105vh;-->
 		}
 		#section2
 		{
 			background-color:#6C648B;
-			height:105vh;
+			<!--height:105vh;-->
 		}
 		#section3
 		{
 			background-color:white;
-			height:105vh;
+			<!--height:105vh;-->
 		}
 		.whiteText
 		{
@@ -41,9 +41,11 @@
 		{
 			font-size:25px;
 		}
-		.halfHeight
+
+		.buffer
 		{
-			height:45vh;
+			height:200px;
+			<!--outline: 3px solid #FFBEFA;-->
 		}
 	</style>
 </head>
@@ -78,8 +80,9 @@
 		<div class="container">
 			<div class="section">
 				<!--   Icon Section   -->
-				<div class="row halfHeight">
-					<div class="col s12">					
+				<div class="row">
+					<div style="height:280px;<!--outline:3px solid #FFBEFA;-->"></div>
+					<div>					
 						<p class="whiteText bigHeading">Our Project</p>
 						<p class="left-align whiteText textOfDecentSize">
 						Dr Holly Tootell’s research project aims to investigate the design process of the Jump Start application, which is a development tool on physical activity and gross motor skills for pre-schoolers and parents and educators. In order to achieve this, various tests have been conducted on paper, with results written down by hand.<br/><br/>
@@ -87,6 +90,7 @@
 						Our proposed solution to this problem is an online web application that aims to make it convenient and efficient to conduct the tests. By using a web application we can have the tests conducetd on devices such as tablets and automatically collect data and compile results into useful graphs and tables. A web application also allows for easy deplyment to preschools and allows for instructions to be displayed through our application to inform educators on how to conducts tests.
 						</p>
 					</div>
+					<div style="height:280px;<!--outline:3px solid #FFBEFA;-->"></div>
 				</div>
 
 			</div>
@@ -98,9 +102,11 @@
 		<div class="container">
 			<div class="section"><!--for our client & users-->
 				<br/>
-				<div class="halfHeight">
+				<div>
+					<div class="row buffer"></div>
 					<div class="row"><!--for client-->
 						<div class="col s12 bigHeading whiteText center-align">
+							<br/>
 							Our Client
 						</div>
 					</div>
@@ -116,10 +122,10 @@
 							</p>
 						</div>
 					</div>
+					<div class="row buffer"></div>
 				</div>
 				
-				<div class="row halfHeight"><!--for users-->
-					<br/>
+				<div class="row"><!--for users-->
 					<p class="bigHeading whiteText center-align">Users</p><br/>
 					<div class="col s4 center-align">
 						<i class="material-icons bigHeading whiteText">laptop_windows</i>
@@ -144,19 +150,31 @@
                       
 					</div>
 				</div>
+				<div class="row buffer"></div>
 			</div>
 		</div>
 	</div>
   
 
   
-  <div id="section3"><!--background wrapper-->
+  <div id="section3" class="valign-wrapper"><!--background wrapper-->
       <div class="container">
         <div class="section">
+		  <div class="row buffer"></div>
+		  <div class="row">
+			<div class="col s4">
+				<p class="bigHeading center-align">Issues</p>
+			</div>
+			<div class="col s4">
+				<p class="bigHeading center-align">Our Solution</p>
+			</div>
+			<div class="col s4">
+				<p class="bigHeading center-align">Methodology</p>
+			</div>
+		  </div>
 
           <div class="row">
             <div class="col s4">
-                <p class="bigHeading">Issues</p>
 				<div class="card">
 					<div class="card-content">
 						<span class="card-title">Data Collection</span>
@@ -176,11 +194,11 @@
                 
             </div>
             <div class="col s4">
-                <p class="bigHeading">Our Solution</p>
 				<div class="card">
 					<div class="card-content">
 						<div>
 							Our solution, Child’sPlay, aims to minimise the troubles involved in launching paper tests. This includes digitising data collection and deploying tests on a web application to allow for accessibility across various devices. In addition, tests can be created and saved into Child’sPlay for later use.
+							<br/><br/>
 						</div>
 						<div class="card-action">
 							<a href="project.html">See More About Our Project</a>
@@ -189,7 +207,6 @@
 				</div>
             </div>
             <div class="col s4">
-                <p class="bigHeading">Methodology</p>
 				<div class="card">
 					<div class="card-content">
 						<div class="card-title">Agile</div>
@@ -207,6 +224,7 @@
 				</div>
             </div>
           </div>
+		  <div class="row buffer"></div>
 
         </div>
       </div>
