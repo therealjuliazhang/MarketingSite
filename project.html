@@ -47,7 +47,7 @@
 <!--  Icon Section  -->
 <div class="container valign-wrapper" id="features">
     <div class="row ">
-	<h3 class="blue-text text-darken-4">Main features</h3>
+	<h3 class="blue-text text-darken-4 center">Main features</h3>
       <div class="col s12 m6">
         <div class="icon-block">
           <h2 class="center blue-text text-darken-4"><i class="material-icons">create</i></h2>
@@ -82,19 +82,18 @@
     </div>
 </div>
 
-<div  style="background-color:#6BBAA7 ">
-	<div class="container"  style="background-color:#6BBAA7 " id="gradient">
-    <h3 class=" black-text text-darken-4">How it works</h3><br/>
-	<h5><b>&nbsp;&nbsp;Administrator Side&nbsp;</b></h5>
+<div  style="background-color:#B6A19E ">
+	<div class="container"  style="background-color:#B6A19E " id="gradient">
+    <h3 class=" black-text text-darken-4 center" id="workSection">How it works</h3><br/>
 	<div class="section">
      <div class="row">
 		<div class="col s12 m6">
-		<img alt="html image example" src="viewExistingTests.png"  width="400" height="300" />
+		<img alt="html image example" src="viewExistingTests.png"   class="materialboxed" width="400" height="300" />
 	    </div>
 		<div class="col s12 m6">
 		<br/>
 		<p><h5><b>View all existing tests</b></h5><p/>
-		<p>Administrators can view all the existing tests they have created so far.<br/>
+		<p >Administrators can view all the existing tests they have created so far.<br/>
 		This includes details such as date created, date last modified and a detailed description for each test.<p/>
 	    </div>
 	 </div>
@@ -106,12 +105,12 @@
 		While editing tests, administrators can preview tasks and remove them as necessary.<p/>
 	    </div>
 		<div class="col s12 m6">
-		<img alt="html image example" align="left" src="editTest.png"  width="400" height="300" />
+		<img alt="html image example" align="left" src="editTest.png"   class="materialboxed" width="400" height="300" />
 	    </div>
 	 </div>
 	 <div class="row">
 		<div class="col s12 m6">
-		<img alt="html image example" src="viewResult.png"  width="400" height="300" />
+		<img alt="html image example" src="viewResult.png"  class="materialboxed" width="400" height="300" />
 	    </div>
 		<div class="col s12 m6">
 		<br/>
@@ -130,18 +129,18 @@
 <p/>
 	    </div>
 		<div class="col s12 m6">
-		<img alt="html image example" align="left" src="result.png"  width="400px" height="300px" />
+		<img alt="html image example" align="left" src="result.png"  class="materialboxed" width="400px" height="300px" />
 	    </div>
 	 </div>
 	 </div>
 	</div>
-<div  style="background-color: #B6A19E">
-	<div class="container"  style="background-color: #B6A19E ">
-	<h5 class=" white-text"><b>&nbsp;&nbsp;Educator Side</b></h5>
+<div  style="background-color: #000000">
+	<div class="container"  style="background-color: #000000 ">
+	<h3 class=" white-text center" id="testSection" >&nbsp;&nbsp;Test Activities</h3>
 	<div class="section">
      <div class="row">
 		<div class="col s12 m6">
-		<img alt="html image example" src="likertScale.png"  width="400" height="300" />
+		<img alt="html image example" src="likertScale.png"  class="materialboxed" width="400" height="300" />
 	    </div>
 		<div class="col s12 m6">
 		<br/>
@@ -157,12 +156,12 @@
 <br/><p/>
 	    </div>
 		<div class="col s12 m6">
-		<img alt="html image example" align="left" src="identifyBodyPart.png"  width="400" height="300" />
+		<img alt="html image example" align="left" src="identifyBodyPart.png"  class="materialboxed" width="400" height="300" />
 	    </div>
 	 </div>
 	 <div class="row">
 		<div class="col s12 m6">
-		<img alt="html image example" src="characterRanking.png"  width="400" height="300" />
+		<img alt="html image example" src="characterRanking.png"  class="materialboxed" width="400" height="300" />
 	    </div>
 		<div class="col s12 m6">
 		<br/>
@@ -181,7 +180,7 @@
 		<p/>
 	    </div>
 		<div class="col s12 m6">
-		<img alt="html image example" align="left" src="preferredMechanics.png"  width="400" height="300" />
+		<img alt="html image example" align="left" src="preferredMechanics.png" class="materialboxed" width="400" height="300" />
 	    </div>
 	 </div>
 	 </div>
@@ -225,6 +224,10 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+});
+
 </script>
 
 <style media="screen">
@@ -246,7 +249,14 @@ $(document).ready(function(){
   padding-left: 100px;
 }
 
+
 #features {
   height: 100vh;
+}
+#testSection{
+ padding-top: 55px;
+}
+#workSection{
+ padding-top: 55px;
 }
 </style>
