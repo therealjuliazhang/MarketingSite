@@ -35,11 +35,15 @@
         }
         .bigHeading
         {
-            font-size: 40px;
+            font-size: 80px;
         }
         .subHeading
         {
             font-size:25px;
+        }
+        .subSubHeading
+        {
+            font-size:65px;
         }
 
         .buffer
@@ -51,34 +55,48 @@
         {
             background-color:#FBA100;
         }
+        .coolWords{
+          position: absolute;
+          z-index: 3;
+          padding-top: 150px;
+          padding-left: 100px;
+        }
     </style>
 </head>
 <body>
     <nav class="teal" role="navigation">
-        <div class="nav-wrapper container">
-            <a class="brand-logo center"><img src="logo.png" height="60px"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"> <a href="homePage.html"><span class="white-text">Home</span></a> </li>
-                <li> <a href="team.html"><span class="white-text">Team</span></a> </li>
-                <li> <a href="project.html"><span class="white-text">Project </span></a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br/><br/>
-                <h1 class="header center whiteText text-lighten-2">Cultural Pentagon</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">Think Big, Start Small</h5>
-                </div>
-                <br/><br/>
-
-            </div>
-        </div>
-        <div class="parallax"><img src="kid1.png" alt="Unsplashed background img 1"></div>
+                 <div class="nav-wrapper container">
+                     <a class="brand-logo center"><img src="logo.png" height="60px"></a>
+                     <ul class="right hide-on-med-and-down">
+                       <li > <a href="homePage.html"><span class="white-text">Home</span></a> </li>
+                       <li> <a href="team.html"><span class="white-text">Team</span></a> </li>
+                       <li> <a href="project.html"><span class="white-text">Project </span></a></li>
+                     </ul>
+                 </div>
+             </nav>
+             
+     <div class="container coolWords">
+       <br><br>
+       <h1  class="white-text text-lighten-2">Child'sPlay</h1>
+       <div class="row">
+         <h4 class="col s12 light white-text text-lighten-2">Usability Testing Platform For Preschoolers</h4>
+       </div>
+       <br><br>
+     </div>
+    <div class="slider backgroundDiv" >
+       <ul class="slides">
+       <li>
+       <img class="backgroundImage" src="kid1.png">
+       </li>
+       <li>
+       <img class="backgroundImage" src="kid2.jpg">
+       </li>
+       <li>
+       <img class="backgroundImage" src="kid3.jpg">
+       </li>
+       </ul>
     </div>
+    <!--end header-->
 
     <div id="section1" class="valign-wrapper"><!--background wrapper-->
         <div class="container">
@@ -87,7 +105,7 @@
                 <div class="row">
                     <div style="height:280px;<!--outline:3px solid #FFBEFA;-->"></div>
                     <div>
-                        <p class="whiteText bigHeading">Our Project</p>
+                        <h3 class="whiteText bigHeading">Our Project</h3>
                         <p class="left-align whiteText textOfDecentSize">
                         Dr Holly Tootell’s research project aims to investigate the design process of the Jump Start application, which is a development tool on physical activity and gross motor skills for pre-schoolers and parents and educators. In order to achieve this, various tests have been conducted on paper, with results written down by hand.<br/><br/>
                         Our team’s job is to make the testing and data collection process easier for the researchers.<br/><br/>
@@ -167,13 +185,13 @@
           <div class="row buffer"></div>
           <div class="row">
             <div class="col s4">
-                <p class="bigHeading center-align">Issues</p>
+                <p class="subSubHeading center-align">Issues</p>
             </div>
             <div class="col s4">
-                <p class="bigHeading center-align">Our Solution</p>
+                <p class="subSubHeading center-align">Our Solution</p>
             </div>
             <div class="col s4">
-                <p class="bigHeading center-align">Methodology</p>
+                <p class="subSubHeading center-align">Methodology</p>
             </div>
           </div>
 
@@ -238,12 +256,9 @@
   
 
   <footer class="page-footer footerBackground">
-    <div class="container">Our group email: culturalpentagon@gmail.com</div>
-    <div class="footer-copyright">
       <div class="container">
-      © Cultural Pentagon 2019
+          © Cultural Pentagon 2019<br/><br/>
       </div>
-    </div>
   </footer>
 
 
@@ -251,6 +266,30 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $(function(){
+  
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+  
+    });
+  })(jQuery);
+  
+  $(document).ready(function(){
+    $('.slider').slider({
+      full_width: true,
+      height : 600,
+      interval: 2500,
+      duration: 2000,
+      indicators: false
+    });
+  });
+  
+  $(document).ready(function(){
+      $('.materialboxed').materialbox();
+  });
+</script>
 
   </body>
 </html>
