@@ -10,8 +10,43 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<style>
+	.textOfDecentSize
+    {
+        font-size: 18px;
+    }
+    .bigHeading
+    {
+		font-size: 80px;
+		font-family: 'Open Sans Condensed', sans-serif; 	 
+		font-weight: 700; 
+		line-height: 64px; 
+		margin: 0 0 0; 
+		padding: 20px 30px; 
+		text-align: center; 
+		text-transform: uppercase; 
+    }
+    .subHeading
+    {
+		font-size:20px;
+		font-family: 'Open Sans Condensed', sans-serif; 
+		font-weight: 700; 
+		line-height: 48px; 
+		margin: 0 0 24px; 
+		padding: 0 30px; 
+		text-align: center; 
+		text-transform: uppercase;
+    }
+
+    .buffer
+    {
+		height:150px;
+		<!--outline: 3px solid #FFBEFA;-->
+    }
+
+</style>
 <body>
-  <nav class="grey darken-4" role="navigation">
+  <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
       <a class="brand-logo center"><img src="logo.png" height="60px"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -23,79 +58,97 @@
   </nav>
 
 
-  	<div name="about us colour" class="black">
+
+	<div id="index-banner" class="parallax-container">
+		<div class="parallax"><img src="kid1.png" alt="Unsplashed background img 1"></div>
+	</div>
+	<div name="about us colour" class="black">
 	<div class="container">
 		<!-- About us start -->
 		<div class="section">
-			<h3 class="row center white-text light" style="font-size:100px;">About Us</h3>
-			<p class="white-text light">We are a group of six stduents studying at the University if Wollongong that has banded together to make "Cultural Pentagon". Our name "Cultural Pentagon" may be confusing as there are six of us, however our name shows the five different cultures (Japan, Vietnam, China, Phillippines, Australia) that we represent. Our logo is a wave in a pentagon, which represents out group name. The pentagon refers to the pentagon part of our name, however the wave represents the sea or the letter "C" representing the cultural part in our name - in other words, it's a bad pun.</p>
-			<p class="white-text light">More Content!</p>
+			<div class="row buffer"></div>
+			<h3 class="row center white-text bigHeading" style="font-size:100px;">About Us</h3>
+			<br/><br/><br/>
+			<p class="white-text center textOfDecentSize">
+				We are a group of six students studying at the University of Wollongong, and we’ve banded together to make “Cultural Pentagon”. Our team is made of both Computer Science and Information Technology students.
+				<br/><br/>
+				Yes, there’s six of us, but we have chosen to be Cultural Pentagon as we come from five different cultures – Japan, Vietnam, China, Philippines and Australia. Our logo consists of five triangles arranged in the shape of a pentagon, with each having an arrow pointing towards the centre – representing how we have come together from different parts of the world.
+
+			</p>
+			<div class="row buffer "></div>
 		</div>
 		<!-- About us end -->
 	</div>
-	</div>
-	<div id="index-banner" class="parallax-container">
-		<div class="parallax"><img src="kid1.png" alt="Unsplashed background img 1"></div>
 	</div>
 	<div class="container">
 		<div class="divider"></div>
 		<!-- Start of section of team cards -->
     	<div class="section">
-			<h3 class="row center light" style="font-size:100px;" >The Team</h3>
+		<div class="row buffer"></div>
+			<h3 class="row center bigHeading blue-text text-darken-4" >The Team</h3>
+			<div class="row buffer "></div>
 			<div class="row">
-				<div class="col s4">
-					<div class="card hoverable">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator responsice-img" src="julia.jpg">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Julia<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Julia Zhang<i class="material-icons right">close</i></span>
-							<p>Julia is from the Southern Highlands, a small rural region in NSW that goes into horribly cold temperatures whenever it feels like it. Sometimes it even snows there. She now lives in Wollongong while studying for her final year of Computer Science. Julia is majoring in Cyber Security. Outside of university, her interests lie in writing, knitting, and beachcombing.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s4">
-					<div class="card hoverable">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator responsice-img" src="kate.HEIC">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Kate<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Kate<i class="material-icons right">close</i></span>
-							<p>Kate is from Hanoi - the capital of Vietnam, where she can have Pho anytime everyday. She is a final year Computer Science student majoring in Software Engineering. Kate has some experience in Java, HTML, CSS, JavaScript, C#, ASP.NET, WCF and MySQL and she is interested in building web applications. Besides work, she enjoys eating, playing guitar, bushwalking and traveling.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s4">
+			
+				<div class="col s5">
 					<div class="card hoverable">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator responsice-img" src="alex.jpg">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Alex<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
+							<p>Project Manager</p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Alex<i class="material-icons right">close</i></span>
 							<p>Alex Hanrahan is a third-year computer science student majoring in software engineering. His choice of computer science was influenced by an interest in programming and the creative aspects of it. Alex grew up in Sydney Australia, he has previously lived in Japan and currently lives in Wollongong. Besides his university work his interests include music and learning languages</p>
 						</div>
 					</div>
+				</div>	
+				<div class="col s2"></div>
+				<div class="col s5">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator responsice-img" src="julia.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Julia<i class="material-icons right">more_vert</i></span>
+							<p>Project Manager</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Julia<i class="material-icons right">close</i></span>
+							<p>Julia is from the Southern Highlands. It’s cold down there. She is studying for her final year of Computer Science, majoring in Cyber Security. She used to be the Project Manager for the first semester before stepping down to let Alex take over. Her role in the project has been mostly working on the front end and documentation. She has dabbled in implementing some backend processes.</p>
+						</div>
+					</div>
 				</div>
-				<div class="col s4">
+				
+			</div>
+			<br/><br/>
+			<div class="row">
+				<div class="col s5">
+					<div class="card hoverable">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator responsice-img" src="kate.HEIC">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Kaitlyn<i class="material-icons right">more_vert</i></span>
+							<p>Back End Leader</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Kaitlyn<i class="material-icons right">close</i></span>
+							<p>Kate is from Hanoi - the capital of Vietnam, where she can have Pho anytime everyday. She is a final year Computer Science student majoring in Software Engineering. Kate has some experience in Java, HTML, CSS, JavaScript, C#, ASP.NET, WCF and MySQL and she is interested in building web applications. Besides work, she enjoys eating, playing guitar, bushwalking and traveling.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col s2"></div>
+				<div class="col s5">
 					<div class="card hoverable">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator responsice-img" src="ren.jpg">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Ren<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
+							<p>Front End Leader</p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Ren<i class="material-icons right">close</i></span>
@@ -103,14 +156,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s4">
+			</div>
+			<br/><br/>
+			<div class="row">
+				<div class="col s5">
 					<div class="card hoverable">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator responsice-img" src="eric.jpg">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Zhixing<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
+							<p>Front End</p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Zhixing<i class="material-icons right">close</i></span>
@@ -118,14 +174,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s4">
+				<div class="col s2"></div>
+				<div class="col s5">
 					<div class="card hoverable">
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator responsice-img" src="andre.jpg">
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Andre<i class="material-icons right">more_vert</i></span>
-							<p>role</p>
+							<p>Front End and Back End</p>
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4">Andre<i class="material-icons right">close</i></span>
@@ -134,36 +191,41 @@
 					</div>
 				</div>
 			</div>
+			<div class="row buffer"></div>
 		</div>
 		<!-- End of section of team cards -->
 		
+	</div>
 		
-		<div class="divider"></div>
+
 		<!-- Contact Us Start -->
-		<div class="section">
-				<h3 class="row center light">Contact Us</h3>
-				<p>Content!</p>
-				<p>More Content!</p>
+		<div class="section" style="background-color:black;">
+			<div class="container">
+				<div class="row buffer"></div>
+				<h3 class="row center bigHeading white-text">Contact Us</h3>
+				<br/><br/><br/>
+				<p class="textOfDecentSize white-text">Got any questions, want to hear more from us, or just want to say hi? Give us a shout at:</p>
+				<blockquote>
+					<p class="textOfDecentSize white-text">culturalpentagon@gmail.com</p>
+				</blockquote>
+				<div class="row buffer"></div>
+			</div>
 		</div>
 		<!-- Contact Us End -->
-	</div>
 
 
 
 
 
 <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="background5.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+    <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
-  <footer class="page-footer teal">
-    <div class="container">Our group email: culturalpentagon@gmail.com</div>
-    <div class="footer-copyright">
-      <div class="container">
-      © Cultural Pentagon 2019
-      </div>
-    </div>
-  </footer>
+	<footer class="page-footer" style="background-color:#FBA100">
+		<div class="container">
+			© Cultural Pentagon 2019<br/><br/>
+		</div>
+	</footer>
 
 
   <!--  Scripts-->
